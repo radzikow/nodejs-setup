@@ -1,0 +1,40 @@
+{
+  "name": "nodejs-setup",
+  "version": "1.0.0",
+  "description": "Node.js project setup with Express.js Typescript, ESLint and Prettier.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon dist\"",
+    "tsc": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint 'src/**/*.{ts, js}'",
+    "lint:fix": "npx eslint 'src/**/*.{ts, js}' --fix"
+  },
+  "keywords": [],
+  "author": "radzikow",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.18",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
